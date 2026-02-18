@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merge Pilot — Automate Your Merge Request Workflows</title>
+  <meta name="description" content="Merge Pilot automates merge request classification, Jira CMG creation, risk assessment, and approval workflows. Open source GitLab + Jira integration platform.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="container hero-content">
+      <img src="logo.png" alt="Merge Pilot" class="hero-logo animate-in">
+      <h1 class="animate-in">Automate Your Merge Request Workflows</h1>
+      <p class="hero-subtitle animate-in">
+        Seamless GitLab &amp; Jira integration. Automated MR classification, Change Management Group creation, risk assessment, and approval workflows — all in one platform.
+      </p>
+      <div class="hero-actions animate-in">
+        <a href="#contact" class="btn btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Get Started
+        </a>
+        <a href="#features" class="btn btn-secondary">
+          Explore Features
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features -->
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section-title animate-in">Key Features</h2>
+      <p class="section-subtitle animate-in">Everything you need to streamline merge request management across your organization.</p>
+      <div class="features-grid">
+        <div class="feature-card animate-in">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Automated Classification</h3>
+          <p>Branch pattern matching to automatically classify MRs as hotfix, feature, or release — with ordered rule evaluation and first-match-wins logic.</p>
+        </div>
+        <div class="feature-card animate-in">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+          </div>
+          <h3>Jira CMG Integration</h3>
+          <p>Automatic Change Management Group ticket creation with template support, custom field mapping, and bidirectional sync between GitLab and Jira.</p>
+        </div>
+        <div class="feature-card animate-in">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Risk Assessment</h3>
+          <p>Multi-factor risk scoring based on change windows, service criticality, diff size, and blackout periods — ensuring safe deployments every time.</p>
+        </div>
+        <div class="feature-card animate-in">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3>Secret Scanning</h3>
+          <p>Gitleaks-powered secret detection with severity-based alerting, allowlist support, and automated blocking of MRs containing exposed credentials.</p>
+        </div>
+        <div class="feature-card animate-in">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Multi-Tenant</h3>
+          <p>Company-level isolation with separate GitLab, Jira, and LDAP configurations. Each tenant gets independent classification rules and project mappings.</p>
+        </div>
+        <div class="feature-card animate-in">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>Approval Workflow</h3>
+          <p>Jira-driven approval and rejection with auto-approve capabilities, approval fatigue detection, and full audit trail of every decision.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="workflow" id="how-it-works">
+    <div class="container">
+      <h2 class="section-title animate-in">How It Works</h2>
+      <p class="section-subtitle animate-in">From webhook to approval — a fully automated pipeline for every merge request.</p>
+      <div class="workflow-steps">
+        <div class="workflow-step animate-in">
+          <div class="step-number">1</div>
+          <div class="step-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h4>GitLab Webhook</h4>
+          <p>MR events trigger processing</p>
+        </div>
+        <div class="workflow-connector animate-in"></div>
+        <div class="workflow-step animate-in">
+          <div class="step-number">2</div>
+          <div class="step-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <h4>Classify MR</h4>
+          <p>Branch pattern matching</p>
+        </div>
+        <div class="workflow-connector animate-in"></div>
+        <div class="workflow-step animate-in">
+          <div class="step-number">3</div>
+          <div class="step-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4>Risk Assessment</h4>
+          <p>Multi-factor risk scoring</p>
+        </div>
+        <div class="workflow-connector animate-in"></div>
+        <div class="workflow-step animate-in">
+          <div class="step-number">4</div>
+          <div class="step-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h4>Secret Scan</h4>
+          <p>Credential leak detection</p>
+        </div>
+        <div class="workflow-connector animate-in"></div>
+        <div class="workflow-step animate-in">
+          <div class="step-number">5</div>
+          <div class="step-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <h4>Create Jira CMG</h4>
+          <p>Change management ticket</p>
+        </div>
+        <div class="workflow-connector animate-in"></div>
+        <div class="workflow-step animate-in">
+          <div class="step-number">6</div>
+          <div class="step-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h4>Await Approval</h4>
+          <p>Jira-driven review process</p>
+        </div>
+        <div class="workflow-connector animate-in"></div>
+        <div class="workflow-step animate-in">
+          <div class="step-number">7</div>
+          <div class="step-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h4>Approve / Reject</h4>
+          <p>MR action on GitLab</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Highlights -->
+  <section class="highlights" id="highlights">
+    <div class="container">
+      <div class="highlight-block animate-in">
+        <div class="highlight-text">
+          <span class="highlight-label">Classification</span>
+          <h2>Smart Classification Engine</h2>
+          <ul>
+            <li><strong>Regex-based branch pattern matching</strong> — define rules like <code>hotfix/*</code>, <code>feature/*</code>, <code>release/*</code></li>
+            <li><strong>Ordered rule evaluation</strong> — first match wins, giving you full control over priority</li>
+            <li><strong>Auto-approve for hotfix/emergency</strong> — skip CMG for critical fixes</li>
+            <li><strong>Automatic assignment</strong> — priority level, change type, and risk level set per rule</li>
+          </ul>
+        </div>
+        <div class="highlight-visual">
+          <div class="code-block">
+            <div class="code-header">
+              <span class="code-dot red"></span>
+              <span class="code-dot yellow"></span>
+              <span class="code-dot green"></span>
+              <span class="code-title">classification_rules</span>
+            </div>
+            <pre><code>{
+  "pattern": "^hotfix/.*",
+  "change_type": "emergency",
+  "risk_level": "high",
+  "auto_approve": true,
+  "priority": 1
+}
+{
+  "pattern": "^feature/.*",
+  "change_type": "standard",
+  "risk_level": "medium",
+  "auto_approve": false,
+  "priority": 2
+}</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="highlight-block reverse animate-in">
+        <div class="highlight-text">
+          <span class="highlight-label">Monitoring</span>
+          <h2>Enterprise-Grade Monitoring</h2>
+          <ul>
+            <li><strong>Real-time job queue dashboard</strong> — track pending, processing, completed, and failed jobs</li>
+            <li><strong>Service health monitoring</strong> — GitLab and Jira uptime checks with latency tracking</li>
+            <li><strong>API call tracking</strong> — request/response logging with latency metrics for debugging</li>
+            <li><strong>Comprehensive audit logging</strong> — 40+ action types covering every system event</li>
+          </ul>
+        </div>
+        <div class="highlight-visual">
+          <div class="metrics-panel">
+            <div class="metric">
+              <span class="metric-value">99.9%</span>
+              <span class="metric-label">Uptime</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">&lt;50ms</span>
+              <span class="metric-label">Avg Latency</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">40+</span>
+              <span class="metric-label">Audit Actions</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">24/7</span>
+              <span class="metric-label">Monitoring</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="highlight-block animate-in">
+        <div class="highlight-text">
+          <span class="highlight-label">Deployment</span>
+          <h2>Flexible Deployment</h2>
+          <ul>
+            <li><strong>Docker Compose</strong> — single command startup with MongoDB included</li>
+            <li><strong>Kubernetes + Helm chart</strong> — production-ready with horizontal scaling</li>
+            <li><strong>Multi-pod safe</strong> — atomic job claiming with heartbeat and stale job recovery</li>
+            <li><strong>Low resource footprint</strong> — runs comfortably with 128–512Mi memory</li>
+          </ul>
+        </div>
+        <div class="highlight-visual">
+          <div class="terminal-block">
+            <div class="code-header">
+              <span class="code-dot red"></span>
+              <span class="code-dot yellow"></span>
+              <span class="code-dot green"></span>
+              <span class="code-title">terminal</span>
+            </div>
+            <pre><code><span class="terminal-prompt">$</span> docker-compose up -d
+<span class="terminal-output">Creating mongo     ... done
+Creating backend   ... done
+Creating frontend  ... done</span>
+
+<span class="terminal-prompt">$</span> curl localhost:8080/health
+<span class="terminal-output">{"status": "healthy"}</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section class="tech-stack" id="tech-stack">
+    <div class="container">
+      <h2 class="section-title animate-in">Built With</h2>
+      <p class="section-subtitle animate-in">Modern, battle-tested technologies for reliability and performance.</p>
+      <div class="tech-badges animate-in">
+        <div class="tech-badge">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M1.811 10.231c-.047 0-.058-.023-.035-.059l.246-.315c.023-.035.081-.058.128-.058h4.172c.047 0 .058.035.035.07l-.199.303c-.023.036-.081.07-.117.07zM.047 11.306c-.047 0-.059-.023-.035-.058l.245-.316c.023-.035.082-.058.129-.058h5.328c.047 0 .07.035.058.07l-.093.28c-.012.047-.058.07-.105.07zm2.828 1.075c-.047 0-.059-.035-.035-.07l.163-.292c.023-.035.07-.07.117-.07h2.337c.047 0 .07.035.07.082l-.023.28c0 .047-.047.082-.082.082zm12.129-2.36c-1.588.397-2.675.689-4.24 1.087-.374.093-.397.105-.714-.257-.351-.397-.608-.654-1.1-.886-1.472-.69-2.898-.491-4.229.222-1.588.852-2.407 2.15-2.384 3.855.024 1.705 1.215 3.108 2.898 3.319 1.448.187 2.664-.327 3.645-1.413.198-.222.374-.468.573-.726H7.287c-.525 0-.654-.327-.478-.749.327-.782.935-2.092 1.296-2.756.082-.152.28-.339.525-.339h7.803c-.047.56-.047 1.121-.14 1.681-.245 1.494-.84 2.883-1.762 4.1-1.494 1.962-3.41 3.225-5.808 3.738-1.96.42-3.832.222-5.56-.724C1.448 18.978.36 17.332.083 15.243c-.327-2.465.478-4.66 2.057-6.575C3.762 6.718 5.92 5.624 8.405 5.182c2.057-.373 4.007-.163 5.761.968.94.607 1.658 1.413 2.173 2.407.129.222.059.339-.198.397z"/></svg>
+          Go
+        </div>
+        <div class="tech-badge">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.541-2.602-4.887-2.602-.31 0-.592.068-.837.196-.723.381-1.024 1.264-.916 2.552.04.478.14 1.005.297 1.572C3.245 6.334 2 7.89 2 9.738c0 3.872 4.24 7.584 10 9.608 5.76-2.024 10-5.736 10-9.608 0-1.848-1.245-3.404-3.327-4.082.157-.567.258-1.094.297-1.572.108-1.288-.193-2.17-.916-2.552a1.476 1.476 0 0 0-.837-.196z"/></svg>
+          React
+        </div>
+        <div class="tech-badge">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.677.12a6.988 6.988 0 0 1 1.463.44v3.317a4.671 4.671 0 0 0-1.92-1.066 4.684 4.684 0 0 0-1.086-.131c-.36 0-.69.048-.991.143a2.202 2.202 0 0 0-.78.406 1.87 1.87 0 0 0-.507.633 1.857 1.857 0 0 0-.183.825c0 .305.06.585.183.836.12.25.293.47.507.647.214.178.473.313.78.407.3.094.63.14.991.14.39 0 .75-.047 1.086-.143a4.486 4.486 0 0 0 1.92-1.078v3.317a6.77 6.77 0 0 1-1.463.44c-.523.083-1.065.12-1.677.12-.836 0-1.61-.102-2.325-.308a5.56 5.56 0 0 1-1.874-.894 4.177 4.177 0 0 1-1.25-1.444c-.301-.561-.451-1.192-.451-1.892s.15-1.33.451-1.892a4.177 4.177 0 0 1 1.25-1.444 5.56 5.56 0 0 1 1.874-.894 8.085 8.085 0 0 1 2.325-.307zM7.777 9.963H11.4l2.026 6.263L15.43 9.963h3.54l-3.892 10.7h-3.46z"/></svg>
+          TypeScript
+        </div>
+        <div class="tech-badge">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0 1 11.91 24h.162c.592-.622 1.339-1.496 1.865-2.347.786-1.228.781-2.143.781-2.143s-.18 1.151-.982 2.086a8.127 8.127 0 0 1-.522.534l-.034.032c-.233.21-.478.407-.735.588-.07-.088-.076-.2-.076-.2s.836-.457 1.283-1.474c.373-.865.56-1.893.56-1.893s.18.78-.08 2.113c-.092.464-.28.924-.485 1.33.487-.467.927-1.04 1.294-1.712.655-1.193.904-2.547.904-2.547s.1 1.038-.257 2.368a8.39 8.39 0 0 1-.539 1.381c.512-.67.885-1.454 1.09-2.292.313-1.25.233-2.345.233-2.345s.199 1.015-.078 2.356c-.18.872-.56 1.706-1.073 2.42.443-.34.838-.768 1.163-1.272.634-.976.903-2.099.903-2.099s.038.703-.212 1.572c-.189.664-.52 1.31-.921 1.876.38-.283.717-.63 1.006-1.028.49-.674.77-1.453.77-1.453s-.02.576-.246 1.235c-.16.472-.407.92-.713 1.32.267-.19.5-.42.712-.673.35-.418.586-.894.586-.894s-.04.413-.217.843c-.105.258-.254.508-.43.734.19-.133.36-.29.505-.464.308-.375.472-.777.472-.777s-.006.262-.129.564a2.29 2.29 0 0 1-.232.383 29.36 29.36 0 0 0 1.28-3.524c.362-1.29.543-2.617.543-2.617z"/></svg>
+          MongoDB
+        </div>
+        <div class="tech-badge">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M4.82 17.1c-.517-.4-.844-.952-.985-1.663l2.083-.238c.07.405.23.72.481.943.252.223.564.334.937.334.418 0 .741-.13.97-.39.229-.26.339-.652.328-1.177V8.465h2.166v6.488c.01.906-.18 1.66-.57 2.262-.39.602-.922 1.042-1.598 1.321-.675.28-1.437.42-2.287.42-.934 0-1.72-.178-2.358-.535-.638-.357-1.1-.825-1.385-1.404L4.82 17.1zM13.915 18.957c-.81-.375-1.44-.921-1.89-1.638-.45-.717-.675-1.565-.675-2.544 0-.979.226-1.827.678-2.544.452-.717 1.083-1.264 1.893-1.641.81-.378 1.749-.567 2.817-.567 1.068 0 2.005.189 2.811.567.807.377 1.435.924 1.884 1.641.449.717.674 1.565.674 2.544 0 .979-.225 1.827-.674 2.544-.449.717-1.077 1.263-1.884 1.638-.806.375-1.743.563-2.811.563-1.068 0-2.007-.188-2.823-.563zm4.557-2.106c.384-.447.576-1.072.576-1.876 0-.803-.192-1.428-.576-1.876-.384-.447-.904-.671-1.56-.671-.657 0-1.179.224-1.567.671-.388.448-.582 1.073-.582 1.876 0 .804.194 1.429.582 1.876.388.448.91.671 1.567.671.656 0 1.176-.223 1.56-.671z"/></svg>
+          Docker
+        </div>
+        <div class="tech-badge">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M10.204 14.35l.007.01-.999 2.413a5.171 5.171 0 0 1-2.075-2.597l2.578-.437.004.005a.44.44 0 0 1 .484.606zm-.833-2.129a.44.44 0 0 0 .173-.756l.002-.011L7.585 9.7a5.143 5.143 0 0 0-.73 3.255l2.514-.725.002-.009zm1.145-1.98a.44.44 0 0 0 .699-.337l.01-.005.15-2.62a5.144 5.144 0 0 0-3.01 1.442l2.147 1.523.004-.003zm.76 2.75l.01.005 2.299 1.165a5.143 5.143 0 0 0 .345-3.228l-2.596.682-.014.005a.44.44 0 0 0-.044 1.371zm1.036-1.467l.013.003 2.615-.52a5.145 5.145 0 0 0-1.96-2.465l-1.2 2.335.005.012a.44.44 0 0 0 .527.635zm-.994 4.211a.44.44 0 0 0-.775-.217l-.009.006-1.924 1.754a5.15 5.15 0 0 0 3.319.585l-.611-2.128zm-1.702-5.59a.44.44 0 0 0-.196.738l-.006.013.814 1.874-.002.005a.44.44 0 0 0 .782-.139l.007-.009.978-1.867-.004-.008a.44.44 0 0 0-.598-.466l-.007.002-1.033.413-.003-.003-.003.003-.729-.558zm5.703.948a5.148 5.148 0 0 0-.456-1.257 5.14 5.14 0 0 0-.682-.984l-.004.004L12 12l.001.003L15.319 11.093z"/><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm4.53 17.752c-.608.482-1.312.83-2.098 1.033a7.024 7.024 0 0 1-2.432.244 7.096 7.096 0 0 1-2.363-.592 7.084 7.084 0 0 1-2.009-1.35 7.093 7.093 0 0 1-1.512-2.036 7.056 7.056 0 0 1-.726-2.397 7.053 7.053 0 0 1 .066-2.444 7.064 7.064 0 0 1 .92-2.318A7.089 7.089 0 0 1 8.1 6.315a7.09 7.09 0 0 1 2.1-1.195A7.06 7.06 0 0 1 12.584 4.6c.83.04 1.636.218 2.386.52a7.07 7.07 0 0 1 2.04 1.26 7.078 7.078 0 0 1 1.456 1.868 7.044 7.044 0 0 1 .749 2.218c.136.835.13 1.685-.027 2.517a7.053 7.053 0 0 1-.748 2.163 7.088 7.088 0 0 1-1.369 1.824 7.076 7.076 0 0 1-.541.482z"/></svg>
+          Kubernetes
+        </div>
+        <div class="tech-badge">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"/></svg>
+          Tailwind CSS
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture Overview -->
+  <section class="architecture" id="architecture">
+    <div class="container">
+      <h2 class="section-title animate-in">Architecture Overview</h2>
+      <p class="section-subtitle animate-in">A clean, event-driven architecture built for reliability.</p>
+      <div class="arch-diagram animate-in">
+        <div class="arch-row">
+          <div class="arch-node arch-gitlab">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"/></svg>
+            <span>GitLab</span>
+          </div>
+          <div class="arch-arrow arch-arrow-h">
+            <svg width="40" height="20" viewBox="0 0 40 20"><path d="M0 10h32M28 4l8 6-8 6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M40 10H8M12 4l-8 6 8 6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <div class="arch-node arch-backend">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+            <span>Merge Pilot<br>Backend</span>
+          </div>
+          <div class="arch-arrow arch-arrow-h">
+            <svg width="40" height="20" viewBox="0 0 40 20"><path d="M0 10h32M28 4l8 6-8 6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M40 10H8M12 4l-8 6 8 6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <div class="arch-node arch-jira">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M11.571 11.513H0a5.218 5.218 0 0 0 5.232 5.215h2.13v2.057A5.215 5.215 0 0 0 12.575 24V12.518a1.005 1.005 0 0 0-1.005-1.005zm5.723-5.756H5.736a5.215 5.215 0 0 0 5.215 5.214h2.129v2.058a5.218 5.218 0 0 0 5.215 5.214V6.758a1.001 1.001 0 0 0-1.001-1.001zM23 .262H11.429a5.215 5.215 0 0 0 5.215 5.215h2.13v2.057A5.215 5.215 0 0 0 24 12.749V1.267A1.005 1.005 0 0 0 23 .262z"/></svg>
+            <span>Jira</span>
+          </div>
+        </div>
+        <div class="arch-column">
+          <div class="arch-arrow arch-arrow-v">
+            <svg width="20" height="40" viewBox="0 0 20 40"><path d="M10 0v32M4 28l6 8 6-8" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <div class="arch-node arch-mongo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0 1 11.91 24h.162c.592-.622 1.339-1.496 1.865-2.347.786-1.228.781-2.143.781-2.143s-.18 1.151-.982 2.086c1.28-3.524.543-2.617.543-2.617z"/></svg>
+            <span>MongoDB</span>
+          </div>
+          <div class="arch-arrow arch-arrow-v">
+            <svg width="20" height="40" viewBox="0 0 20 40"><path d="M10 0v32M4 28l6 8 6-8" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <div class="arch-node arch-frontend">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <span>React Frontend</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deployment Options -->
+  <section class="deployment" id="deployment">
+    <div class="container">
+      <h2 class="section-title animate-in">Deployment</h2>
+      <p class="section-subtitle animate-in">Production-ready Kubernetes deployment with Helm chart.</p>
+      <div class="deploy-single animate-in">
+        <div class="deploy-card featured">
+          <div class="deploy-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M10.204 14.35l.007.01-.999 2.413a5.171 5.171 0 0 1-2.075-2.597l2.578-.437.004.005a.44.44 0 0 1 .484.606zm-.833-2.129a.44.44 0 0 0 .173-.756l.002-.011L7.585 9.7a5.143 5.143 0 0 0-.73 3.255l2.514-.725.002-.009zm1.145-1.98a.44.44 0 0 0 .699-.337l.01-.005.15-2.62a5.144 5.144 0 0 0-3.01 1.442l2.147 1.523.004-.003z"/><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3>Kubernetes</h3>
+          <div class="deploy-features">
+            <div class="deploy-feature">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Helm chart included
+            </div>
+            <div class="deploy-feature">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Horizontal scaling
+            </div>
+            <div class="deploy-feature">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Health checks &amp; probes
+            </div>
+            <div class="deploy-feature">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Multi-pod safe with heartbeat
+            </div>
+            <div class="deploy-feature">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Low resource footprint (128–512Mi)
+            </div>
+            <div class="deploy-feature">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Production ready
+            </div>
+          </div>
+          <div class="deploy-cmd">
+            <code>helm install merge-pilot ./chart</code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-content animate-in">
+        <h2>Get In Touch</h2>
+        <p>Ready to streamline your merge request workflows? Contact us for a demo, pricing, or any questions.</p>
+        <a href="mailto:support@cloudnativeworks.com" class="contact-email">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          support@cloudnativeworks.com
+        </a>
+        <a href="mailto:support@cloudnativeworks.com" class="btn btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="logo.png" alt="Merge Pilot" class="footer-logo">
+          <p>Automate your merge request workflows with confidence.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#deployment">Deployment</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <a href="mailto:support@cloudnativeworks.com">support@cloudnativeworks.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Built by <strong>CloudNativeWorks</strong> &mdash; All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
